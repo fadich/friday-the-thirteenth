@@ -21,4 +21,9 @@ for month in range(0, months):
         cur_month = 1
         cur_year += 1
 
-# print(res)
+counter = 0
+for r in res.values():
+    counter = 0 if r else counter + 1
+    print('_' if r else counter, end='')
+
+print()
